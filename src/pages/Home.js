@@ -12,7 +12,7 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="md:w-1/2"
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#1F4167] mb-6">
               Discover Amazing Products
             </h1>
             <p className="text-lg text-gray-600 mb-8">
@@ -22,7 +22,7 @@ const Home = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-indigo-600 text-white px-8 py-3 rounded-lg text-lg font-semibold"
+              className="bg-[var(--accentColor)] text-white px-8 py-3 rounded-lg text-lg font-semibold"
             >
               Shop Now
             </motion.button>
@@ -31,12 +31,12 @@ const Home = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="md:w-1/2 mt-8 md:mt-0"
+            className="w-[50%] pt-10 flex justify-center items-center mt-8 md:mt-0"
           >
             <img
-              src="https://cdn.dribbble.com/users/1817852/screenshots/4114896/media/a28756d5ba11b58b17dadd086c3f2af8.jpg?resize=768x576&vertical=center"
+              src="https://i.pinimg.com/736x/19/87/b2/1987b281f2e6105a9f0f5499e6934be9.jpg"
               alt="Shopping Illustration"
-              className="w-full"
+              className="w-[100%] h-[100%] drag"
             />
           </motion.div>
         </div>
@@ -49,7 +49,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-3xl font-bold text-center mb-12"
+            className="text-3xl font-bold text-center text-[var(--primaryColor)] mb-12"
           >
             Featured Categories
           </motion.h2>
@@ -77,7 +77,7 @@ const Home = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -105,19 +105,19 @@ const Home = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
 
 const categories = [
   {
-    name: "Electronics",
+    name: "Comforts",
     description: "Latest gadgets and tech accessories",
     image: "https://illustrations.popsy.co/white/device-stack.svg",
   },
   {
-    name: "Fashion",
+    name: "Blankets",
     description: "Trendy clothing and accessories",
     image: "https://illustrations.popsy.co/white/fashion-shopping.svg",
   },
